@@ -1,0 +1,167 @@
+/* Global layout tweaks */
+body {
+	background: #fafafa;
+	color: #222;
+}
+
+.container.my-5 h1 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+/* ---------- Cart page styles ---------- */
+.table-responsive {
+	margin-bottom: 1rem;
+}
+
+.table {
+	background: transparent;
+}
+
+.table thead th {
+	border-bottom: 2px solid #e9ecef;
+	font-weight: 600;
+}
+
+.table tbody tr td {
+	vertical-align: middle;
+	border-top: 1px solid rgba(0,0,0,0.04);
+	padding: 16px 12px;
+}
+
+.table tbody tr td img {
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.table tbody tr td .fw-bold {
+	font-size: 16px;
+}
+
+.table tbody tr {
+	background: #fff;
+	border-radius: 8px;
+}
+
+/* Make each table row look like a card by separating rows visually */
+.table tbody tr + tr td {
+	border-top: 12px solid transparent;
+}
+
+/* Quantity input small controls */
+input[type="number"].form-control {
+	max-width: 90px;
+	text-align: center;
+}
+
+.btn-danger {
+	background: #e24b4b;
+	border-color: #e24b4b;
+}
+
+/* Order summary card */
+.card {
+	border-radius: 10px;
+	box-shadow: 0 6px 18px rgba(34,34,34,0.06);
+}
+.card .card-title {
+	font-weight: 700;
+}
+.card .card-body h6, .card .card-body h5 {
+	margin: 0;
+}
+
+.card .d-flex.justify-content-between h6,
+.card .d-flex.justify-content-between span {
+	font-weight: 600;
+}
+
+/* Buttons */
+.btn-dark {
+	background: #2b2b2b;
+	border-color: #2b2b2b;
+}
+.btn-light {
+	background: #ffffff;
+	color: #333;
+	border: 1px solid #dcdcdc;
+}
+
+/* Continue/Checkout controls */
+.d-flex.gap-2 .btn-light {
+	min-width: 160px;
+}
+
+/* ---------- Checkout page styles ---------- */
+.card-header {
+	background: #fff;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.card .form-label {
+	font-weight: 600;
+}
+
+/* Error alert (Formik) */
+.alert-danger {
+	background: #f8d7da;
+	color: #6b1116;
+	border: 1px solid #f5c6cb;
+	border-radius: 6px;
+}
+.alert-heading {
+	font-weight: 700;
+}
+
+/* Make the order summary sticky look lighter */
+.card.sticky-top {
+	border-radius: 10px;
+}
+
+/* Inputs invalid look */
+.is-invalid {
+	border-color: #e24b4b !important;
+	box-shadow: none !important;
+}
+.invalid-feedback {
+	display: block;
+}
+
+/* ---------- Success page styles ---------- */
+.success-check {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 18px;
+	background-color: #28a745;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 6px 18px rgba(40,167,69,0.14);
+}
+.success-check svg {
+	width: 56px;
+	height: 56px;
+}
+
+/* Misc small responsive tweaks */
+@media (max-width: 767px) {
+	.table tbody tr td img {
+		width: 56px;
+		height: 56px;
+	}
+	.card.sticky-top {
+		position: static !important;
+		top: auto !important;
+	}
+}
+
+/* subtle container spacing to match wireframes */
+.lead {
+	color: #555;
+}
+
+
