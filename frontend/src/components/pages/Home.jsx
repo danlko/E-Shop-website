@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useProducts } from "../ProductContext/ProductContext.jsx";
-import HeroBanner from "../HeroBanner/HeroBanner";
-import ProductCard from "../ProductCard/ProductCard";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import HeroBanner from "../HeroBanner/HeroBanner.jsx";
+import ProductCard from "../ProductCard/ProductCard.jsx";
+import PrimaryButton from "../PrimaryButton/PrimaryButton.jsx";
 
 function Home() {
   const { products } = useProducts();

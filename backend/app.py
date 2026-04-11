@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS 
 import uuid
+import os
+
 
 app = Flask(__name__)
 CORS(app)
@@ -149,5 +151,9 @@ def delete_shoe(shoe_id):
         return jsonify({"message": "Shoe not found"}), 404
 
 
+ebug_mode = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
+port = int(os.getenv('FLASK_PORT', '5000'))
+host = os.getenv('FLASK_HOST', '0.0.0.0')
+
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=debug_mode, host=host, port=port)
