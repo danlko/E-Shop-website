@@ -43,14 +43,14 @@ class OrderItem(db.Model):
     shoe_id = db.Column(db.String, db.ForeignKey('shoes.id'))
 
 seed_data = [
-    {"id": "1", "name": "Adidas Campus", "size": "43", "color": "Grey", "price": "150", "image": "/assets/campus.jpg"},
-    {"id": "2", "name": "Converse Chuck 70", "size": "42", "color": "Black", "price": "100", "image": "/assets/converse.jpg"},
-    {"id": "3", "name": "Asics Tiger", "size": "46", "color": "Black", "price": "120", "image": "/assets/tiger.jpg"},
-    {"id": "4", "name": "Asics R71", "size": "39", "color": "Black", "price": "99", "image": "/assets/r71.webp"},
-    {"id": "5", "name": "Asics Classic", "size": "44", "color": "White", "price": "130", "image": "/assets/asics.jpg"},
-    {"id": "6", "name": "New Balance NB1", "size": "41", "color": "Green", "price": "110", "image": "/assets/nb_green.jpg"},
-    {"id": "7", "name": "New Balance 574", "size": "42", "color": "Grey", "price": "120", "image": "/assets/nb_574.jpg"},
-    {"id": "8", "name": "New Balance Classic", "size": "43", "color": "Blue", "price": "115", "image": "/assets/nb1.jpg"}
+    {"id": "1", "name": "Adidas Campus", "size": "43", "color": "Grey", "price": "150", "image": "../frontend/public/assets/campus.jpg"},
+    {"id": "2", "name": "Converse Chuck 70", "size": "42", "color": "Black", "price": "100", "image": "../frontend/public/assets/converse.jpg"},
+    {"id": "3", "name": "Asics Tiger", "size": "46", "color": "Black", "price": "120", "image": "../frontend/public/assets/tiger.jpg"},
+    {"id": "4", "name": "Asics R71", "size": "39", "color": "Black", "price": "99", "image": "../frontend/public/assets/r71.webp"},
+    {"id": "5", "name": "Asics Classic", "size": "44", "color": "White", "price": "130", "image": "../frontend/public/assets/asics.jpg"},
+    {"id": "6", "name": "New Balance NB1", "size": "41", "color": "Green", "price": "110", "image": "../frontend/public/assets/nb_green.jpg"},
+    {"id": "7", "name": "New Balance 574", "size": "42", "color": "Grey", "price": "120", "image": "../frontend/public/assets/nb_574.jpg"},
+    {"id": "8", "name": "New Balance Classic", "size": "43", "color": "Blue", "price": "115", "image": "../frontend/public/assets/nb1.jpg"}
 ]
 
 with app.app_context():
